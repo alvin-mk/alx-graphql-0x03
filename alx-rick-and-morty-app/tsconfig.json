@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                          // Specify ECMAScript target version.
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],   // Specify library files to include.
+    "allowJs": true,                            // Allow JavaScript files to be imported.
+    "skipLibCheck": true,                       // Skip type checking of declaration files.
+    "strict": true,                             // Enable strict type-checking options.
+    "forceConsistentCasingInFileNames": true,   // Ensure consistent casing in file names.
+    "noEmit": true,                             // Disable emitting output files.
+    "esModuleInterop": true,                    // Enable compatibility with CommonJS and ES Modules.
+    "module": "ESNext",                         // Specify module code generation.
+    "moduleResolution": "Node",                // Use Node.js-style module resolution.
+    "resolveJsonModule": true,                  // Include modules imported as JSON.
+    "isolatedModules": true,                    // Ensure each file can be transpiled separately.
+    "jsx": "react-jsx",                         // Specify JSX code generation.
+    "baseUrl": ".",                             // Base directory for non-relative imports.
+    "paths": {
+      "@/*": ["src/*"]                          // Define alias for the `src` directory.
+    }
+  },
+  "include": ["src"],                           // Specify files to include in the compilation.
+  "exclude": ["node_modules"]                   // Exclude these directories from the compilation.
+}
